@@ -4,4 +4,5 @@
     </string>
     <string name="title_activity_searc_for_clubs_screen">SearcForClubsScreen</string>
     <string name="title_activity_seatch_for_clubs_from_dbscreen">SeatchForClubsFromDBScreen</string>
+    <string name="title_activity_search_for_jersey_screen">SearchForJerseyScreen</string>
 </resources>
