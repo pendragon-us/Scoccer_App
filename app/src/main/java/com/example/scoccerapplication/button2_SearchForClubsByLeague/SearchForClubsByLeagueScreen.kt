@@ -173,7 +173,7 @@ class SearchForClubsByLeagueScreen : ComponentActivity() {
                             Text(text = "intStadiumCapacity: ${club.intStadiumCapacity},", color = Color.White)
                             Text(text = "strWebsite: ${club.strWebsite},", color = Color.White)
                             Text(text = "strTeamJersey: ${club.strTeamJersey},", color = Color.White)
-                            Text(text = "strTeamLogo: ${club.strTeamLogo},", color = Color.White)
+                            Text(text = "strTeamLogo: ${club.strLogo},", color = Color.White)
                             Spacer(modifier = Modifier.height(20.dp))
                         }
                     }
@@ -209,7 +209,7 @@ suspend fun fetchClubs(league: String): List<Club> = withContext(Dispatchers.IO)
                             intStadiumCapacity = optString("intStadiumCapacity"),
                             strWebsite = optString("strWebsite"),
                             strTeamJersey = optString("strTeamJersey"),
-                            strTeamLogo = optString("strTeamLogo")
+                            strLogo = optString("strLogo")
                         )
                     }
                 }

@@ -126,7 +126,8 @@ class SearchForClubsFromDBScreen : ComponentActivity() {
                         items(clubs) {club ->
                             Text(text = "Name: ${club.name}", color = Color.White)
                             Text(text = "League: ${club.strLeague}", color = Color.White)
-                            val imageBitmap = loadImageFromUrl(club.strTeamLogo)
+                            Log.d("Link", club.strLogo)
+                            val imageBitmap = loadImageFromUrl(club.strLogo)
                             imageBitmap?.let {
                                 Image(
                                     bitmap = it.asImageBitmap(),
