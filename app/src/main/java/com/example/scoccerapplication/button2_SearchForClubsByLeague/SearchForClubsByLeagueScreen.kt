@@ -30,6 +30,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -75,11 +76,11 @@ class SearchForClubsByLeagueScreen : ComponentActivity() {
     @Composable
     fun DisplayTheUI(){
         val snackBarHostState = SnackbarHostState()
-        var detailsOfTheLeagues by remember { mutableStateOf("") }
+        var detailsOfTheLeagues by rememberSaveable { mutableStateOf("") }
         val scope = rememberCoroutineScope()
-        var isSearchingForResult by remember { mutableStateOf(false) }
+        var isSearchingForResult by rememberSaveable { mutableStateOf(false) }
         val buttonColor =  ButtonDefaults.buttonColors(containerColor = Color.Yellow)
-        var clubDetails by remember { mutableStateOf(listOf<Club>()) }
+        var clubDetails by rememberSaveable { mutableStateOf(listOf<Club>()) }
 
 
         Box(modifier = Modifier.fillMaxSize()){

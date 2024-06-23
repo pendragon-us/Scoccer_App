@@ -28,6 +28,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -68,9 +69,9 @@ class SearchForClubsFromDBScreen : ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun DisplayTheUI() {
-        var text by remember { mutableStateOf("") }
-        var clubs by remember { mutableStateOf(listOf<Club>()) }
-        var isLoading by remember { mutableStateOf(false) }
+        var text by rememberSaveable { mutableStateOf("") }
+        var clubs by rememberSaveable { mutableStateOf(listOf<Club>()) }
+        var isLoading by rememberSaveable { mutableStateOf(false) }
         val buttonColor = ButtonDefaults.buttonColors(containerColor = Color.Yellow)
 
         Box(modifier = Modifier.fillMaxSize()) {
