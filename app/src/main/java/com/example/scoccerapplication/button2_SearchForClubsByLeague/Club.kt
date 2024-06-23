@@ -20,5 +20,5 @@ data class Club(
     val intStadiumCapacity: String,
     val strWebsite: String,
     val strTeamJersey: String,
-    val strTeamLogo: String
+    val strLogo: String
 )
