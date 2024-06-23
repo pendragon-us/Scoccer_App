@@ -1,4 +1,4 @@
-package com.example.scoccerapplication.button4_SearchForJerseys.ui.theme
+package com.example.scoccerapplication.button_4.ui.theme
 
 import android.app.Activity
 import android.os.Build

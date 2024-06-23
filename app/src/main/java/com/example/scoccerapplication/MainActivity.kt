@@ -37,7 +37,7 @@ import com.example.scoccerapplication.DataBase.AppDataBase
 import com.example.scoccerapplication.button1_AddLeaguesToDB.leagues
 import com.example.scoccerapplication.button2_SearchForClubsByLeague.SearchForClubsByLeagueScreen
 import com.example.scoccerapplication.button3_SearchForClubs.SearchForClubsFromDBScreen
-import com.example.scoccerapplication.button4_SearchForJerseys.SearchForJerseyScreen
+import com.example.scoccerapplication.button_4.ButtonFourScreen
 import com.example.scoccerapplication.ui.theme.ScoccerApplicationTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -160,7 +160,8 @@ class MainActivity : ComponentActivity() {
                         .height(60.dp)
                         .width(250.dp),
                     onClick = {
-                        val intent = Intent(context, SearchForJerseyScreen::class.java)
+                        Log.d("Jersey", "Jersey")
+                        val intent = Intent(context, ButtonFourScreen::class.java)
                         context.startActivity(intent)
                     }
                 ) {

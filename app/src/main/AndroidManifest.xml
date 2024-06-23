@@ -15,6 +15,16 @@
         android:theme="@style/Theme.ScoccerApplication"
         tools:targetApi="31">
         <activity
+            android:name=".button_4.ButtonFourScreen"
+            android:exported="false"
+            android:label="@string/title_activity_button_four_screen"
+            android:theme="@style/Theme.ScoccerApplication" />
+        <activity
+            android:name=".SearchJearsyScreen"
+            android:exported="false"
+            android:label="@string/title_activity_search_jearsy_screen"
+            android:theme="@style/Theme.ScoccerApplication" />
+        <activity
             android:name=".button4_SearchForJerseys.SearchForJerseyScreen"
             android:exported="false"
             android:label="@string/title_activity_search_for_jersey_screen"
